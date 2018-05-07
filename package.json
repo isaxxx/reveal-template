@@ -1,0 +1,14 @@
+{
+  "name": "reveal-template",
+  "version": "1.0.0",
+  "description": "個人的に利用しているreveal.jsのテンプレート。",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "isaxxx",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.24.4"
+  }
+}
