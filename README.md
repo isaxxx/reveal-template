@@ -1,39 +1,41 @@
 # reveal-template
 
-個人的に利用しているreveal.jsのテンプレート。
+Template for reveal.js.
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 ## Usage
 
 ```bash
-$ npm run start -- ディレクトリ名
+$ npm run start -- (directory name in src)
 ```
 
-もしくは
+or
 
 ```bash
-$ node index.js ディレクトリ名
+$ node index.js (directory name in src)
 ```
 
-※ディレクトリ名はsrc配下
+## Memo
 
-## 操作メモ
+### Show All Slide List
 
-### スライドの一覧表示
+Press `Esc` key.
 
-`Esc`キーでスライドの一覧表示が可能。
+### Presenter Mode
 
-### 発表者モードについて
+Press `Esc` key.
 
-`S`キーで発表者モード表示。
-
-下記のタグ内に記述したテキストは、発表者モード時に表示されるカンペとなる。
+#### Cheating Paper Tag
 
 ```html
-<aside class="notes">〜</aside>
+<aside class="notes">...</aside>
 ```
 
-### PDF出力
+### Output PDF
 
-（Google Chrome 前提）URLに「?print-pdf」をつけ、`Ctrl + p`で「PDFをプレビュー」をクリックして保存する。
+* Google Chrome
+
+Append `?print-pdf` to the URL (ex. http://localhost:3000/src/sample/?print-pdf).
+
+And press `Ctrl + p` keys, Click `Preview PDF` to save it.

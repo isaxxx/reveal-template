@@ -1,14 +1,21 @@
 {
   "name": "reveal-template",
-  "version": "1.0.0",
-  "description": "個人的に利用しているreveal.jsのテンプレート。",
+  "version": "1.0.1",
+  "description": "Template for reveal.js.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "check": "eslint .",
+    "git-ignore": "git rm -r --cached . && git add -A && git commit --allow-empty -m 'gitignore-refresh' && git reset --soft HEAD^",
+    "git-commit": "git add -A && git commit",
+    "git-push": "git push origin master"
   },
   "author": "isaxxx",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.24.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0"
   }
 }
